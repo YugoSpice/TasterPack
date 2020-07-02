@@ -1,0 +1,140 @@
+<!-- Begin Accordion Snippet -->
+<style>
+  .so-tab {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 25px 0;
+  }
+  .so-tab label {
+    position: relative;
+    display: block;
+    padding: 0 25px 0 0;
+    margin-bottom: 15px;
+    line-height: normal;
+    cursor: pointer;
+  }
+  .so-tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  .so-tab-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .35s;
+  }
+  /* :checked */
+  .so-tab input:checked ~ .so-tab-content {
+    max-height: none;
+  }
+  /* Icon */
+  .so-tab label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+  }
+  .so-tab input[type=checkbox] + label::after {
+    content: "+";
+  }
+  .so-tab input[type=radio] + label::after {
+    content: "\25BC";
+  }
+  .so-tab input[type=checkbox]:checked + label::after {
+    transform: rotate(315deg);
+  }
+  .so-tab input[type=radio]:checked + label::after {
+    transform: rotateX(180deg);
+  }
+</style>
+
+<div class="so-accordion-wrapper">
+  <div class="so-tab">
+    <input id="so-tab-1" type="checkbox" name="tabs" />
+    <label for="so-tab-1">Miso Chipotle Stir-In Paste (150mL)</label>
+    <div class="so-tab-content">
+      <p>Liven up any dish with our Miso Chipotle stir-in paste!</p>
+   <br>
+   <p>It mixes smoky chipotle with zesty lime and a hint of honey for a seriously unique flavour hit.</p>
+<br>
+<p>This pairs amazingly well with lots of different ingredients, making it perfect for creating seriously addictive lightning-quick meals.</p>
+<br>
+<p>Use this to marinate tofu, salmon, or aubergine before roasting, mix into a stir-fry or quesadilla filling, or dip your tortilla chips in it.</p>
+<br>
+<p>This sauce is suitable for vegetarians and is made with natural ingredients without any additives or preservatives. We manufacture in small batches in the UK using the best quality ingredients.</p>
+<br>
+<p>This sauce is suitable for vegetarians and is made with natural ingredients without any additives or preservatives. We manufacture in small batches in the UK using the best quality ingredients.</p>
+<br>
+<p>Spice level: medium</p>
+<br>
+<p>Suitable for vegans: no (contains honey)</p>
+<br>
+<p>Ingredients: Lime Juice, Honey, Miso Paste (Water, Soybeans, Rice, Salt, Alcohol) (25%), Cider Vinegar, Onion, Chipotle Chilli (3%), Tomato Paste (Tomato Paste, Salt), Olive Oil, Xanthan Gum. For Allergens See Ingredients in bold.</p>
+<br>
+<p>Please note all sauces are manufactured in a facility that handles all allergens.</p>
+<br>
+<p>Nutritional Information: Typical values per 100ml. Energy: 740kj/174kcal / Fat (of which saturates): 2.7g (0.4 g) / Carbohydrate (of which sugars): 33.5g (26g) / Protein: 4.8g / Salt: 3.3g</p>
+<br>
+<p>Each jar has 150mL of Miso Chipotle Stir-In Paste. A serving is approximately 15mL.</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-2" type="checkbox" name="tabs" />
+    <label for="so-tab-2">Curried Sun-Dried Tomato Stir-In Paste (150mL)</label>
+    <div class="so-tab-content">
+   <p>Bring a savoury hit to any dish with our Curried Sun-Dried Tomato stir-in paste!</p>
+<br>
+<p>It mixes aromatic curry spices with tangy sun-dried tomatoes and sweet apricot for a seriously delicious flavour hit.</p>
+<br>
+<p>This pairs amazingly well with lots of different ingredients, making it perfect for creating lightning-quick meals you’ll be dreaming about for days to come (please tell us we’re not the only ones who have food dreams).</p>
+<br>
+<p>Use this to marinate chicken, white fish, or cauliflower before roasting, mix into a curry or pasta sauce, or swirl into hummus or to top falafel.</p>
+<br>
+<p>This sauce is suitable for vegans and is made with natural ingredients without any additives or preservatives. We manufacture in small batches in the UK using the best quality ingredients.</p>
+<br>
+<p>Spice level: mild</p>
+<br>
+<p>Suitable for vegans: yes</p>
+<br>
+<p>Ingredients: Marinated Sun Dried Tomato (Sun Dried Tomatoes (50%) (Sun Dried Tomatoes, Salt), Rapeseed Oil, White Wine Vinegar, Water) (58%), Water, Apricot Conserve (Apricots, Sugar, Citric Acid), Curry Spices (Coriander, Cumin, Turmeric, Chilli, Bay, Cinnamon, Garlic) (2%).</p>
+<br>
+<p>Please note all sauces are manufactured in a facility that handles all allergens.</p>
+<br>
+<p>Nutritional Information: Typical values per 100ml. Energy: 1337kj/323kcal / Fat (of which saturates): 22.7g (3.3g) / Carbohydrate (of which sugars): 29.5g (20.4g) / Protein: 5.6g / Salt: 1g.</p>
+<br>
+<p>Each jar has 150mL of Curried Sun-Dried Tomato Stir-In Paste. A serving is approximately 15mL.</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-3" type="checkbox" name="tabs" />
+    <label for="so-tab-3">Chipotle Garni Hot Sauce (150mL)</label>
+    <div class="so-tab-content">
+   <p>Bring the heat to any dish with our Chipotle Garni hot sauce!</p>
+   <br>
+   <p>It mixes zesty orange with smoky chipotle and fresh herbs for an intensely delicious heat.</p>
+<br>
+<p>This pairs amazingly well with lots of different ingredients, making it perfect for creating lightning-quick meals that pack a huge flavour punch.</p>
+<br>
+<p>Use this to make chicken wings, mix into veg and prawns for fajitas, or swirl into hummus or use to dress a grain salad.</p>
+<br>
+<p>This sauce is suitable for vegetarians and is made with natural ingredients without any additives or preservatives. We manufacture in small batches in the UK using the best quality ingredients.</p>
+<br>
+<p>Spice level: hot</p>
+<br>
+<p>Suitable for vegans: no (contains honey)</p>
+<br>
+<p>Ingredients: Cider Vinegar, Water, Onion, Honey, Chipotle Chilli (7%), Tomato Paste (Tomato Paste, Salt), Olive Oil, Bouquet Garni Herbs (Coriander, Marjoram, Thyme, Oregano, Rosemary) (2%), Salt, Orange Oil.</p>
+<br>
+<p>Please note all sauces are manufactured in a facility that handles all allergens.</p>
+<br>
+<p>Nutritional Information: Typical values per 100ml. Energy: 349kj/83kcal / Fat (of which saturates): 2.1g (0.3g) / Carbohydrate (of which sugars): 13g (11g) / Protein: 1.6g / Salt: 1.1g.</p>
+<br>
+<p>Each bottle has 150mL of Chipotle Garni Hot Sauce. A serving is approximately 15mL.</p>
+    </div>
+  </div>
+  </div>
+</div>
